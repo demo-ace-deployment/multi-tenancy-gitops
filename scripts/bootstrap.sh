@@ -443,7 +443,7 @@ print_urls_passwords () {
 
 get_rwx_storage_class () {
 
-  DEFAULT_RWX_STORAGE_CLASS=${DEFAULT_RWX_STORAGE_CLASS:-managed-nfs-storage}
+  DEFAULT_RWX_STORAGE_CLASS=${DEFAULT_RWX_STORAGE_CLASS:-ibmc-file-gold-gid}
   OCS_RWX_STORAGE_CLASS=${OCS_RWX_STORAGE_CLASS:-ocs-storagecluster-cephfs}
 
   if [[ -n "${RWX_STORAGE_CLASS}" ]]; then
